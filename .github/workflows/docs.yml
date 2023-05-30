@@ -15,8 +15,7 @@ jobs:
         with:
           python-version: 3.9
       - run: |
-          pip install .
-          pip install mkdocs
+          pip install ".[docs]"
       - run: |
           cd docs
           mkdocs gh-deploy --force
