@@ -52,7 +52,7 @@ jobs:
       #       deploy github page
       #----------------------------------------------------------
       - name: Deploy github page
-      - run: |
+        run: |
           source .venv/bin/activate
           cd docs
           mkdocs gh-deploy --force
