@@ -47,3 +47,9 @@ clean-reference-doc:
 .PHONY: serve  ## serve mkdocs
 serve: clean-reference-doc
 	@ cd docs && mkdocs serve
+
+.PHONY: push ## 🏹 Add and commit with message 'update' then pushes to remote
+push:
+	git add .
+	git commit -m'update'
+	git push

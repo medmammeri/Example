@@ -19,5 +19,6 @@ jobs:
       - run: |
           poetry install
       - run: |
+          pip install .
           cd docs
           mkdocs gh-deploy --force
